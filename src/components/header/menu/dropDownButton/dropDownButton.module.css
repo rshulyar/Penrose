@@ -1,0 +1,15 @@
+.button-text{
+    font: normal normal 600 18px/23px Source Sans Pro;
+    letter-spacing: 0.9px;
+    color: #C445F4;
+    text-transform: uppercase;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.test {
+    
+}

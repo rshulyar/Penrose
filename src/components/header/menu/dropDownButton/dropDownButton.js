@@ -10,6 +10,28 @@ import Stack from '@mui/material/Stack';
 
 import classes from './dropDownButton.module.css';
 
+const buttonStyles = {
+    textAlign: 'left',
+    font: 'normal normal 600 18px/23px Source Sans Pro',
+    letterSpacing: '0.9px',
+    color: '#C445F4',
+    textTransform: 'uppercase',
+    opacity: 1,
+    ":hover": {
+        background: 'rgba(235, 0, 255, 0.24) 0% 0% no-repeat padding-box',
+        borderRadius: '8px',
+        color: '#FF00FF',
+    },
+}
+
+const itemsStyles = {
+    textAlign: 'left',
+    font: 'normal normal 600 18px/48px Source Sans Pro',
+    letterSpacing: '0px',
+    color: 'rgba(19, 22, 196, 1)',
+    opacity: 1,
+}
+
 export default function DropDownButton() {
     const [open, setOpen] = React.useState(false);
     const anchorRef = React.useRef(null);
@@ -26,14 +48,14 @@ export default function DropDownButton() {
         setOpen(false);
     };
 
-  function handleListKeyDown(event) {
+    function handleListKeyDown(event) {
         if (event.key === 'Tab') {
             event.preventDefault();
             setOpen(false);
         } else if (event.key === 'Escape') {
             setOpen(false);
         }
-  }
+    }
 
   // return focus to the button when we transitioned from !open -> open
     const prevOpen = React.useRef(open);
@@ -55,7 +77,7 @@ export default function DropDownButton() {
                     aria-expanded={open ? 'true' : undefined}
                     aria-haspopup="true"
                     onClick={handleToggle}
-                    className={classes['button-text']}
+                    sx={buttonStyles}
                 >
                     Store
                 </Button>
@@ -84,13 +106,13 @@ export default function DropDownButton() {
                                         onKeyDown={handleListKeyDown}
                                     >
                                         <a href='#' className={classes['link']}>
-                                            <MenuItem onClick={handleClose}>Women</MenuItem>
+                                            <MenuItem onClick={handleClose} sx={itemsStyles}>Women</MenuItem>
                                         </a>
                                         <a href='#' className={classes['link']}>
-                                            <MenuItem onClick={handleClose}>Man</MenuItem>
+                                            <MenuItem onClick={handleClose} sx={itemsStyles}>Man</MenuItem>
                                         </a>
                                         <a href='#' className={classes['link']}>
-                                            <MenuItem onClick={handleClose}>Kids</MenuItem>
+                                            <MenuItem onClick={handleClose} sx={itemsStyles}>Kids</MenuItem>
                                         </a>
                                     </MenuList>
                                 </ClickAwayListener>

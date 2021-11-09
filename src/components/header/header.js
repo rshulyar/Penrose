@@ -9,9 +9,10 @@ import Menu from './menu';
 import classes from './header.module.css';
 
 export default function Header() {
+
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" className={classes['background']}>
+        <Box sx={{ flexGrow: 1, }}>
+            <AppBar position="static" sx={{background: 'inherit'}}>
                 <Toolbar>
                     <Typography
                         variant="h6"
@@ -19,7 +20,7 @@ export default function Header() {
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        Penrose
+                        <div className={classes['title']}>penrose</div>
                     </Typography>
                     <Menu/>
                 </Toolbar>

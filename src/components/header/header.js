@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <Box sx={{ flexGrow: 1, }}>
-            <AppBar position="static" sx={{background: 'inherit'}}>
+            <AppBar position="static" sx={{background: 'inherit', border: 0, boxShadow: 0}}>
                 <Toolbar>
                     <Typography
                         variant="h6"

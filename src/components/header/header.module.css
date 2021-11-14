@@ -14,5 +14,5 @@
 .placeholder {
     width: 96px;
     height: 96px;
-    background-color: red;
+    background: url('./../../images/logo.png') no-repeat;
 }

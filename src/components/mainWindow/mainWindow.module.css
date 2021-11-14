@@ -1,0 +1,17 @@
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title-and-video {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.slider {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}

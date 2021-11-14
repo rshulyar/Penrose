@@ -1,0 +1,18 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 336px;
+}
+
+.title {
+    width: 336px;
+    height: 428px;
+    background: url('./../../../images/Title.png') no-repeat;
+}
+
+.video {
+    width: 200px;
+    height: 115px;
+    margin-top: 40px;
+}

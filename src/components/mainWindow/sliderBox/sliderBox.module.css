@@ -1,0 +1,35 @@
+.wrap {
+    width: 312px;
+    height: 166px;
+    margin-top: 117px;
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+}
+
+.quotes {
+    font-family: Source Sans Pro;
+    font-size: 80px;
+    color: #FF00FF;
+}
+
+.main-text {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.author {
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    color: blue;
+
+    display: flex;
+    justify-content: flex-end;
+}

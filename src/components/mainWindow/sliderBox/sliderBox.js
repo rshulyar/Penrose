@@ -22,18 +22,15 @@ function SliderBox () {
     async function getDatabase() {
         let response = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline');
         let dataBase = await response.json();
-        console.log(dataBase);
 
         let filteredData = [];
 
         for(let i = 0; i < dataBase.length; i++) {
             if(dataBase[i].price < 5) {
-                console.log(dataBase[i]);
                 filteredData.push(dataBase[i]);
             }
         }
 
-        console.log(filteredData);
         setData(filteredData);
     }
 

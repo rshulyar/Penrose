@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+
 .main-div {
-    background: url('images/background.png') no-repeat 35% -60%, rgba(41, 41, 41, 1);
+    padding-bottom: 300px;
+
+    background: url('images/background.png') no-repeat 35% 70%, rgba(41, 41, 41, 1);
     opacity: 1;
 }

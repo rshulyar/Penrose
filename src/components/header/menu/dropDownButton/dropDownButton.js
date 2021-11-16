@@ -79,7 +79,7 @@ export default function DropDownButton() {
                     onClick={handleToggle}
                     sx={buttonStyles}
                 >
-                    Store
+                    Store {open?'∧':'∨'}
                 </Button>
                 <Popper
                     open={open}

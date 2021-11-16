@@ -2,6 +2,8 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
+import classes from './menu.module.css';
+
 import DropDownButton from './dropDownButton';
 
 const homeButtonStyles = {
@@ -30,11 +32,13 @@ const buttonsStyles = {
 export default function Menu() {
 
     return (
-        <Stack direction="row" spacing={2}>
-            <Button sx={homeButtonStyles}>Home</Button> 
-            <Button sx={buttonsStyles}>New Collections</Button>
-            <DropDownButton />
-            <Button sx={buttonsStyles}>Contacts</Button>
-        </Stack>
+        <div className={classes['wrap']}>
+            <Stack direction="row" spacing={2}>
+                <Button sx={homeButtonStyles}>Home</Button> 
+                <Button sx={buttonsStyles}>New Collections</Button>
+                <DropDownButton />
+                <Button sx={buttonsStyles}>Contacts</Button>
+            </Stack>
+        </div>
     );
 }

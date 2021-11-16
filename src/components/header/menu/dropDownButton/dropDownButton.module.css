@@ -3,3 +3,7 @@
     font-weight: 900;
     font-stretch: ultra-expanded;
 }
+
+.title {
+    white-space: nowrap;
+}

@@ -17,3 +17,28 @@
     background: url('./../../images/logo.png') no-repeat;
     background-size: contain;
 }
+
+@media screen and (max-width: 768px) {
+    .title-and-logo {
+        /* transform: scale(0.7, 0.7); */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .title-and-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .title-and-logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .title-and-logo {
+        display: none;
+    }
+}

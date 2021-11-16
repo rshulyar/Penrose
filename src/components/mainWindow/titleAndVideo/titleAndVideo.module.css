@@ -17,3 +17,39 @@
     height: 115px;
     margin-top: 40px;
 }
+
+/* @media screen and (max-width: 2560px) {
+    .wrap {
+        transform: scale(1.5, 1.5);
+    }
+} */
+
+@media screen and (max-width: 1024px) {
+    .wrap {
+        transform: scale(0.9, 0.9);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {
+        transform: scale(0.7, 0.7);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .wrap {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .wrap {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .wrap {
+        transform: scale(0.4, 0.4);
+    }
+}

@@ -2,7 +2,9 @@
 
 .main-div {
     padding-bottom: 300px;
+    min-width: 500px;
 
-    background: url('images/background.png') no-repeat 35% 70%, rgba(41, 41, 41, 1);
+    background: url('images/background.png') no-repeat center 100px, rgba(41, 41, 41, 1);
+    background-size: contain;
     opacity: 1;
 }

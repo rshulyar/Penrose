@@ -27,7 +27,7 @@ export default function Header() {
                     >
                         <div className={classes['title-and-logo']}>
                             {/** Replace this div-placeholder with a logo when it will be received */}
-                            <div className={classes['placeholder']}></div>
+                            <div className={classes['logo']}></div>
                             <div className={classes['title']}>penrose</div>
                         </div>
                     </Typography>

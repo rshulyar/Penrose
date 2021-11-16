@@ -9,6 +9,7 @@
     width: 336px;
     height: 428px;
     background: url('./../../../images/Title.png') no-repeat;
+    background-size: contain;
 }
 
 .video {

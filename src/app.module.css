@@ -8,3 +8,9 @@
     background-size: contain;
     opacity: 1;
 }
+
+@media screen and (min-width: 2560px) {
+    .main-div {
+        height: 1500px;
+    }
+}

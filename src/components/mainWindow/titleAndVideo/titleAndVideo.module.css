@@ -18,11 +18,12 @@
     margin-top: 40px;
 }
 
-/* @media screen and (max-width: 2560px) {
+@media screen and (min-width: 2560px) {
     .wrap {
-        transform: scale(1.5, 1.5);
+        padding-top: 200px;
+        transform: scale(1.8, 1.8);
     }
-} */
+}
 
 @media screen and (max-width: 1024px) {
     .wrap {

@@ -34,11 +34,13 @@
     justify-content: flex-end;
 }
 
-/* @media screen and (max-width: 2560px) {
+@media screen and (min-width: 2560px) {
     .wrap {
-        transform: scale(1.5, 1.5);
+        margin-top: 400px;
+        margin-left: 300px;
+        transform: scale(1.8, 1.8);
     }
-} */
+}
 
 @media screen and (max-width: 1024px) {
     .wrap {

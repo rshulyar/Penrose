@@ -26,7 +26,6 @@ export default function Header() {
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         <div className={classes['title-and-logo']}>
-                            {/** Replace this div-placeholder with a logo when it will be received */}
                             <div className={classes['logo']}></div>
                             <div className={classes['title']}>penrose</div>
                         </div>
